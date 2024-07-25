@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.2">
+	<title>javascriptcode</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	var users = [
+		{user : "mohammad" , age : 23 , gender : "male"},
+		{user : "ali" , age : 20 , gender : "male"},
+		{user : "hossein" , age : 18 , gender : "male"},
+		{user : "reza" , age : 24 , gender : "male"},
+		{user : "zahra" , age : 30 , gender : "female"},
+		{user : "sara" , age : 33 , gender : "female"},
+		{user : "arezo" , age : 15 , gender : "female"},
+		{user : "saeb" , age : 17 , gender : "male"},
+		{user : "rooz" , age : 26 , gender : "female"},
+		{user : "salman" , age : 35 , gender : "male"},
+		{user : "ramin" , age : 36 , gender : "male"},
+		{user : "mina" , age : 19 , gender : "female"},
+		{user : "amir" , age : 40 , gender : "male"},
+		{user : "aida" , age : 41 , gender : "female"},
+		{user : "faweze" , age : 50 , gender : "female"},
+		{user : "negin" , age : 29 , gender : "female"},
+		{user : "negar" , age : 45 , gender : "female"},
+		{user : "mohssen" , age : 44 , gender : "male"},
+		{user : "arman" , age : 48 , gender : "male"},
+		{user : "fatame" , age : 55 , gender : "female"}
+		]	
+	function male_counter(){
+		var gender = users[index].gender;
+		if (gender == "male"){
+			return true;
+		}
+	}
+	function female_counter(){
+		var gender = users[index].gender;
+		if (gender == "female"){
+			return true;
+		}
+	}
+	var male = 0 ;
+	var female = 0;
+	for (var index = 0 ; index < 20 ; index ++){
+		if (male_counter()){
+			male ++;
+		};
+		if (female_counter()) {
+			female++;
+		}
+	};
+	console.log(`There are ${male} males and ${female} females on the list of users.`)
+</script>
+
+
+</body>
+</html>
